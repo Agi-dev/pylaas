@@ -4,8 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"pylaas-core" = {git = "https://github.com/Agi-dev/pylaas_core.git"}
 arrow = "*"
+"pylaas_core" = {git = "https://github.com/Agi-dev/pylaas_core.git"}
+
+
 
 
 
