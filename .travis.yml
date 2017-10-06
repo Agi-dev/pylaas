@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.6"
+  - "nightly"
+
+# command to install dependencies
+install:
+  - "pip install -e . --upgrade"
+  - "pip install pipenv"
+  - "pipenv install --dev"
+
+# command to run tests
+script:
+  - pytest -v -x --doctest-modules --ignore=setup.py --cov=pylaas
+after_success:
+  - coveralls
+
+notifications:
+  email:
+    recipients:
+      - fs@agidev.fr

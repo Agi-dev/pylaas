@@ -1,0 +1,3 @@
+configurations:
+services:
+  date: 'pylaas.technical.date.Date'
