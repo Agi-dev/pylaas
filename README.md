@@ -11,3 +11,9 @@ Pylaas
 Provide a bunch of services as :
 - dates manipulation
 - ... more coming
+
+## Installation
+
+```
+pipenv install git+https://github.com/Agi-dev/pylaas.git#egg=pylaas
+```
