@@ -20,7 +20,7 @@ AUTHOR = 'François Schneider - AgiDeV'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'arrow', 'pylaas_core'
+    'arrow'
 ]
 
 # The rest you shouldn't have to touch too much :)
@@ -98,9 +98,6 @@ setup(
         # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
-    ],
-    dependency_links=[
-        "git+ssh://git@github.com/Agi-dev/pylaas_core.git#egg=pylaas_core"
     ],
     # $ setup.py publish support.
     cmdclass={
