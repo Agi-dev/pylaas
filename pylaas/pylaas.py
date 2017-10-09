@@ -23,4 +23,4 @@ class Pylaas(PylaasCore):
 
         """
         current_path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-        super()._init("{}/../conf/definitions.yml".format(current_path))
+        super()._init("{}/conf/definitions.yml".format(current_path))
