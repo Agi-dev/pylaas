@@ -1,14 +1,14 @@
 import arrow
-import tests.unit.bootstrap
-from pylaas_core.abstract.abstract_test_case import AbstractTestCase
-from pylaas.technical.date import Date
+from pylaas_core.abstract.abstract_service_unit_test import AbstractServiceUnitTest
 
 from pylaas.pylaas import Pylaas
+from pylaas.technical.date import Date
 
 
-class TestDate(AbstractTestCase):
+class TestDate(AbstractServiceUnitTest):
     """Test Lib Date Suite"""
 
+    # TODOFSC : comprendre pourquoi Container n'ai pas défini si je ne surcharge pas ?
     def setup_method(self, method):
         TestDate._service = Pylaas.get_service('date')
 

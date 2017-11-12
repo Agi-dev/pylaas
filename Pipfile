@@ -1,31 +1,18 @@
 [[source]]
+
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
+
 [packages]
+
+pylaas-core = {git = "https://github.com/Agi-dev/pylaas_core.git"}
 arrow = "*"
-"pylaas_core" = {git = "https://github.com/Agi-dev/pylaas_core.git"}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 [dev-packages]
 
 pytest = "*"
-"pytest-cov" = "*"
+pytest-cov = "*"
 "pytest-pep8" = "*"
