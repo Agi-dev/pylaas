@@ -1,25 +1,20 @@
 import arrow
 from pylaas_core.abstract.abstract_service_unit_test import AbstractServiceUnitTest
 
-from pylaas.pylaas import Pylaas
 from pylaas.technical.date import Date
 
 
 class TestDate(AbstractServiceUnitTest):
     """Test Lib Date Suite"""
+    _service_id = 'date'
 
-    # TODOFSC : comprendre pourquoi Container n'ai pas défini si je ne surcharge pas ?
-    def setup_method(self, method):
-        TestDate._service = Pylaas.get_service('date')
-
-    @staticmethod
-    def s():
+    def s(self):
         """
             return date service from container
         Returns:
             Date
         """
-        return TestDate._service
+        return self._service
 
     """
     previous_weekday

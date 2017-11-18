@@ -16,6 +16,11 @@ class Pylaas(PylaasCore):
     Pylaas Library as a service
     """
 
+    def __new__(cls):
+        """Prevent instantiation
+        """
+        raise TypeError("Pylaas class may not be instantiated")
+
     @classmethod
     def init(cls):
         """
@@ -23,4 +28,5 @@ class Pylaas(PylaasCore):
 
         """
         current_path = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-        super()._init("{}/conf/definitions.yml".format(current_path))
+        PylaasCore._init("{}/conf/definitions.yml".format(current_path))
+

@@ -1,9 +1,11 @@
 import copy
 
+from pylaas_core.abstract.abstract_service import AbstractService
+
 from pylaas.interface.technical.date_interface import DateInterface
 
 
-class Date(DateInterface):
+class Date(AbstractService, DateInterface):
     """Service Date"""
 
     @staticmethod
