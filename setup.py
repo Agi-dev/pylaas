@@ -73,7 +73,7 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['arrow', 'pylaas_core'],
+    install_requires=['arrow', 'pylaas_core>=0'],
 
     dependency_links=[
         "git+https://github.com/Agi-dev/pylaas_core.git@master#egg=pylaas_core-0"
