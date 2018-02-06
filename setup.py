@@ -76,7 +76,7 @@ setup(
     install_requires=['arrow', 'pylaas_core'],
 
     dependency_links=[
-        "git+ssh://git@github.com/Agi-dev/pylaas_core.git@master#egg=pylaas_core"
+        "git+ssh://git@github.com/Agi-dev/pylaas_core.git@master#egg=pylaas_core-0"
     ],
 
     # List additional groups of dependencies here (e.g. development
