@@ -1,0 +1,15 @@
+apipkg==1.4
+arrow==0.10.0
+coverage==4.4.2
+execnet==1.5.0
+pep8==1.7.1
+py==1.4.34
+pylaas-core==0.0.1.dev1
+pytest==3.2.3
+pytest-cache==1.0
+pytest-cov==2.5.1
+pytest-pep8==1.0.6
+python-dateutil==2.6.1
+PyYAML==3.12
+six==1.11.0
+var-dump==1.1
