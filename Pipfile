@@ -7,8 +7,8 @@ name = "pypi"
 
 [packages]
 
-pylaas-core = {git = "https://github.com/Agi-dev/pylaas_core.git"}
-arrow = "*"
+arrow = "==0.10.0"
+pylaas_core = {git = "ssh://git@github.com/Agi-dev/pylaas_core.git", editable=true}
 
 
 [dev-packages]
