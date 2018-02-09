@@ -8,7 +8,9 @@ name = "pypi"
 [packages]
 
 arrow = "*"
-pylaas_core = {git = "https://github.com/Agi-dev/pylaas_core.git"}
+pylaas-core = {git = "https://github.com/Agi-dev/pylaas_core.git"}
+requests = "*"
+validators = "*"
 
 
 [dev-packages]

@@ -12,7 +12,7 @@ Provide a bunch of services as :
 - dates manipulation
 - ... more coming
 
-## Installation
+## Installation for you project
 
 ```
 pipenv install git+https://github.com/Agi-dev/pylaas.git#egg=pylaas

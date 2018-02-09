@@ -25,7 +25,6 @@ class DateInterface(abc.ABC):
         Returns:
             Arrow: date to previous seeking day
         """
-        pass
 
     @staticmethod
     @abc.abstractstaticmethod

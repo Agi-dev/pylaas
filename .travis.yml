@@ -1,7 +1,7 @@
 language: python
 python:
   - "3.6"
-  - "nightly"
+#  - "nightly" pb avec PyYaml
 
 # command to install dependencies
 install:
@@ -18,3 +18,4 @@ notifications:
   email:
     recipients:
       - fs@agidev.fr
+  on_success: change

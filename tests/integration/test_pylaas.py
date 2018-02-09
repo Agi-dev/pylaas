@@ -11,8 +11,7 @@ class TestPylaas:
     """
     __new__
     """
-
-    def test_new_raise_TypeError(self):
+    def test_new_raise_type_error(self):
         """Test unique instance creation"""
         with pytest.raises(TypeError):
             Pylaas()
@@ -20,7 +19,6 @@ class TestPylaas:
     """
     init
     """
-
     def test_init_success(self):
         Pylaas.init()
         assert 'services' in Pylaas.get_container().get_definitions()

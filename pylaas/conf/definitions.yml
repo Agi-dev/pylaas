@@ -1,3 +1,4 @@
 configurations:
 services:
   date: 'pylaas.technical.date.Date'
+  request: 'pylaas.technical.request.Request'

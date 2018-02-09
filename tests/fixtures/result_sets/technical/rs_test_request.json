@@ -1,0 +1,6 @@
+{
+  "test_get_with_session_and_auth_success": {"_content": {"authenticated": true, "user": "anUser"}, "_success": true, "_status_code": 200},
+  "test_get_with_timeout_return_503": {"_success": false, "_status_code": 503, "_content": "Service unavailable"},
+  "test_get_failed": {"_content": "METHOD NOT ALLOWED", "_success": false, "_status_code": 405},
+  "test_get_success_return_dict": {"_content": {"args": {}, "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate", "Connection": "close", "Host": "httpbin.org", "User-Agent": "pytest-user_agent"}, "origin": "pytest", "url": "http://httpbin.org/get"}, "_status_code": 200, "_success": true}
+}
