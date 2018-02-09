@@ -12,7 +12,7 @@ class Request(AbstractService, RequestInterface):
 
     def init_session(self, url, auth=None, headers=None) -> None:
         """
-
+        Initialize session
         Args:
             url (str): base url for request
             auth (tuple): credentials (<login>, <password>)
@@ -34,19 +34,28 @@ class Request(AbstractService, RequestInterface):
 
     def reset_session(self) -> None:
         """
-        reset session
+        Reset session
         Returns:
             None
         """
         self._url = None
         self._session = None
 
-    def get(self, page, **kwargs) -> Response:
+    def get(self, url, **kwargs) -> Response:
+        """
+        Sends a GET request.
+        Args:
+            url (str): full url if no session else complete url part
+            **kwargs:  Optional arguments that ``request`` takes.
+
+        Returns:
+            Response
+        """
         try:
             if self._session is not None:
-                response = self._session.get('{}{}'.format(self._url, page))
+                response = self._session.get('{}{}'.format(self._url, url))
             else:
-                response = requests.get(page, **kwargs)
+                response = requests.get(url, **kwargs)
             return self._format_response(response)
         except requests.exceptions.ConnectTimeout:
             return Response(success=False, content='Service unavailable', status_code=503)
